@@ -25,7 +25,7 @@ include 'includes/autoload.php';
     CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
     CURLOPT_CUSTOMREQUEST => "GET",
     CURLOPT_HTTPHEADER => array(
-      "Authorization: Bearer sk_test_5f1fcaf1add8b0b13a0501008ecb892abeb9589e",
+      "Authorization: Bearer XXXXXXXXX", //replace the XXXXXX with your private key from paystack
       "Cache-Control: no-cache",
     ),
   ));
@@ -121,7 +121,7 @@ include 'includes/autoload.php';
     
     
     if(!$result){
-      echo"There was a problem on your code".mysqli_error($conn);
+      echo"Error!".mysqli_error($conn);
 
       exit;
     }else{
