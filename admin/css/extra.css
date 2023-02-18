@@ -1,0 +1,20 @@
+/* Presentational style rules only
+ * Not required
+ */
+
+
+#more-content {
+  display: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 340px) {
+  
+  
+  #more-content {
+    float: left;
+    margin-right: 10px;
+    
+  }
+  
+  
