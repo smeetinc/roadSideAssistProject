@@ -293,10 +293,10 @@ function payWithPaystack(e) {
 function payWithPaystack(e) {
   e.preventDefault();
   let handler = PaystackPop.setup({
-    key: 'pk_test_91a7b9764db859f7cead7b81abaa8d1ec69f2d6a', // Replace with your public key
+    key: 'xxxxxxxxxxxxx', // Replace with your public key
     email: '<?php echo $email; ?>',
     amount: '<?php echo $finalAmount*100; ?>',
-    subaccount: 'ACCT_2g2qoechol538jt',
+    subaccount: '', // Replace with the subaccount code
     bearer: 'subaccount',
     ref: 'RSA'+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
     // label: "Optional string that replaces customer email"
