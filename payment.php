@@ -29,7 +29,7 @@ include 'includes/autoload.php';
   $fields = [
     'email' => $email,
     'amount' => $amount,
-    'subaccount' => "ACCT_2g2qoechol538jt",
+    'subaccount' => "", //deleted part
     'bearer' => "subaccount",
     'callback_url' => 'http://localhost/roadsideassist/verify.php',
     'metadata' => [
@@ -75,7 +75,7 @@ include 'includes/autoload.php';
   curl_setopt($ch,CURLOPT_POST, true);
   curl_setopt($ch,CURLOPT_POSTFIELDS, $fields_string);
   curl_setopt($ch, CURLOPT_HTTPHEADER, array(
-    "Authorization: Bearer sk_test_5f1fcaf1add8b0b13a0501008ecb892abeb9589e",
+    "Authorization: Bearer ", //deleted
     "Cache-Control: no-cache",
   ));
   
@@ -119,7 +119,7 @@ else
       "invoice_limit"=> $limits
     ],
     CURLOPT_HTTPHEADER => array(
-      "Authorization: Bearer sk_test_5f1fcaf1add8b0b13a0501008ecb892abeb9589e",
+      "Authorization: Bearer ", //deleted
       "Cache-Control: no-cache"
     ),
   ));
@@ -154,7 +154,7 @@ else
       "invoice_limit"=> $limits
     ],
     CURLOPT_HTTPHEADER => array(
-      "Authorization: Bearer sk_test_5f1fcaf1add8b0b13a0501008ecb892abeb9589e",
+      "Authorization: Bearer ", //deleted
       "Cache-Control: no-cache"
     ),
   ));
@@ -189,7 +189,7 @@ else
       "invoice_limit"=> $limits
     ],
     CURLOPT_HTTPHEADER => array(
-      "Authorization: Bearer sk_test_5f1fcaf1add8b0b13a0501008ecb892abeb9589e",
+      "Authorization: Bearer ", //deleted
       "Cache-Control: no-cache"
     ),
   ));
@@ -211,7 +211,7 @@ paymentForm.addEventListener('submit2', payWithPaystack, false);
 function payWithPaystack(e) {
   e.preventDefault();
   let handler = PaystackPop.setup({
-    key: 'pk_test_91a7b9764db859f7cead7b81abaa8d1ec69f2d6a', // Replace with your public key
+    key: 'pk_test_91a7b9764db859f7cead7d6a', // Replace with your public key
     email: document.getElementById('email').value,
     amount: 1890 * 100,
     ref: 'RSA'+Math.floor((Math.random() * 1000000000) + 1), // generates a pseudo-unique reference. Please replace with a reference you generated. Or remove the line entirely so our API will generate one for you
@@ -402,11 +402,11 @@ function payWithPaystack(e) {
         <div class='tab'>
         <h2>Bank Depost</h2>
         <strong><p> Price: #2,100 (350 Naira per month for 6 months)</strong>
-        <p>Account Name:  Oreoluwa Enakhe-Bini</p>
-        <p>Account Number: 2158935290</p>
+        <p>Account Name: ni</p>
+        <p>Account Number: 290</p>
         <p>Bank Name: United Bank of Africa | UBA</p>
 
-        <p>Send your payment proof to this email: <a href='mailto:3riplescoops@gmail.com?subject=Mail from our Website - roadsideassist.com.ng'>3riplescoops@gmail.com</a> or Send to <a href='https://api.whatsapp.com/send/?phone=2348178573884&text&app_absent=0'>+2348178573884</a> on WhatsApp for confirmation</p>
+        <p>Send your payment proof to this email: <a href='mailto:3riops@gmail.com?subject=Mail from our Website - roadsideassist.com.ng'>3roops@gmail.com</a> or Send to <a href='https://api.whatsapp.com/send/?phone=2344&text&app_absent=0'>+2348884</a> on WhatsApp for confirmation</p>
 
         </div>
 
@@ -483,11 +483,11 @@ function payWithPaystack(e) {
         <div class='tab'>
         <h2>Bank Depost</h2>
         <strong><p> Price: #3,600 (300 Naira per month for 12 months)</strong>
-        <p>Account Name:  Oreoluwa Enakhe-Bini</p>
-        <p>Account Number: 2158935290</p>
+        <p>Account Name:  Oreoi</p>
+        <p>Account Number: 21290</p>
         <p>Bank Name: United Bank of Africa | UBA</p>
 
-        <p>Send your payment proof to this email: <a href='mailto:3riplescoops@gmail.com?subject=Mail from our Website - roadsideassist.com.ng'>3riplescoops@gmail.com</a> or Send to <a href='https://api.whatsapp.com/send/?phone=2348178573884&text&app_absent=0'>+2348178573884</a> on WhatsApp for confirmation</p>
+        <p>Send your payment proof to this email: <a href='mailto:3rops@gmail.com?subject=Mail from our Website - roadsideassist.com.ng'>3roops@gmail.com</a> or Send to <a href='https://api.whatsapp.com/send/?phone=23484&text&app_absent=0'>+234817884</a> on WhatsApp for confirmation</p>
 
         </div>
 
@@ -575,7 +575,7 @@ function payWithPaystack(e) {
         <p>Account Number: 2158935290</p>
         <p>Bank Name: United Bank of Africa | UBA</p>
 
-        <p>Send your payment proof to this email: <a href='mailto:3riplescoops@gmail.com?subject=Mail from our Website - roadsideassist.com.ng'>3riplescoops@gmail.com</a> or Send to <a href='https://api.whatsapp.com/send/?phone=2348178573884&text&app_absent=0'>+2348178573884</a> on WhatsApp for confirmation</p>
+        <p>Send your payment proof to this email: <a href='mailto:@gmail.com?subject=Mail from our Website - roadsideassist.com.ng'>3oops@gmail.com</a> or Send to <a href='https://api.whatsapp.com/send/?phone=2373884&text&app_absent=0'>+2348178573884</a> on WhatsApp for confirmation</p>
 
         </div>
 
